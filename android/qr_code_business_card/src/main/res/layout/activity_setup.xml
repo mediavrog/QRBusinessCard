@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.mediavrog.qr_code_business_card.SetupActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/contact_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_contact" />
+
+        <!--<Button-->
+        <!--android:id="@+id/switch_recommended"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/recommended" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/switch_all"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/all_fields" />-->
+
+        <LinearLayout style="@style/InputRow">
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_surname"
+                android:hint="@string/surname" />
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_firstname"
+                android:hint="@string/firstname" />
+        </LinearLayout>
+
+        <View style="@style/Spacer" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_phone"
+            android:hint="@string/phone" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_mobile"
+            android:hint="@string/mobile" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_mail"
+            android:hint="@string/email" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_web"
+            android:hint="@string/homepage" />
+
+        <View style="@style/Spacer" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_street"
+            android:hint="@string/street" />
+
+        <LinearLayout style="@style/InputRow">
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_city"
+                android:hint="@string/city" />
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_zip"
+                android:hint="@string/zip" />
+        </LinearLayout>
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_country"
+            android:hint="@string/country" />
+
+        <View style="@style/Spacer" />
+
+        <EditText
+            style="@style/InputField"
+            android:id="@+id/f_company"
+            android:hint="@string/company" />
+
+        <LinearLayout style="@style/InputRow">
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_position"
+                android:hint="@string/position" />
+
+            <EditText
+                style="@style/InputField.Flexi"
+                android:id="@+id/f_dept"
+                android:hint="@string/department" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
